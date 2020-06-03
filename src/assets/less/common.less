@@ -1,0 +1,134 @@
+* { margin: 0; padding: 0; font-family: PingFang SC,Helvetica Neue,Helvetica,STHeiTi,sans-serif; } [v-cloak] { display: none !important; } li { list-style: none; }
+
+// 0.5px border
+.border-top,.border-bottom,.border-left,.border-right {
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 200%;
+        height: 1px;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -o-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+.border-top:before {
+    border-top: 1px solid #dedede;
+    top: 0;
+}
+.border-bottom:before {
+    border-bottom: 1px solid #dedede;
+    bottom: 0;
+}
+.border-left:before {
+    border-left: 1px solid #dedede;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 200%;
+}
+.border-right:before {
+    border-right: 1px solid #dedede;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 200%;
+}
+
+/* 重置滚动条 */
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ccc;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #eee;
+}
+
+.clearfix:after {  
+    content: "."; 
+    display: block;
+    clear: both; 
+    visibility: hidden; 
+    height: 0; 
+    font-size:0;   
+}
+
+// margin
+// .m-fn(50)!important;
+// .m-fn(@n,@i:0) when(@n >= @i){
+//     .m-@{i}{
+//         margin:@i + @0px
+//     }
+//     .m-fn(@n,(@i + 5))
+// }
+// .mt-fn(50)!important;
+// .mt-fn(@n,@i:0) when(@n >= @i){
+//     .mt-@{i}{
+//         margin-top:@i + @0px
+//     }
+//     .mt-fn(@n,(@i + 5))
+// }
+
+// .mr-fn(50)!important;
+// .mr-fn(@n,@i:0) when(@n >= @i){
+//     .mr-@{i}{
+//         margin-right:@i + @0px
+//     }
+//     .mr-fn(@n,(@i + 5))
+// }
+
+// .mb-fn(50)!important;
+// .mb-fn(@n,@i:0) when(@n >= @i){
+//     .mb-@{i}{
+//         margin-bottom:@i + @0px
+//     }
+//     .mb-fn(@n,(@i + 5))
+// }
+
+// .ml-fn(50)!important;
+// .ml-fn(@n,@i:0) when(@n >= @i){
+//     .ml-@{i}{
+//         margin-left:@i + @0px
+//     }
+//     .ml-fn(@n,(@i + 5))
+// }
+
+// .mv-fn(50)!important;
+// .mv-fn(@n,@i:0) when(@n >= @i){
+//     .mv-@{i}{
+//         margin-top:@i + @0px;
+//         margin-bottom:@i + @0px
+//     }
+//     .mv-fn(@n,(@i + 5))
+// }
+
+// .mh-fn(50)!important;
+// .mh-fn(@n,@i:0) when(@n >= @i){
+//     .mh-@{i}{
+//         margin-left:@i + @0px;
+//         margin-right:@i + @0px
+//     }
+//     .mh-fn(@n,(@i + 5))
+// }
