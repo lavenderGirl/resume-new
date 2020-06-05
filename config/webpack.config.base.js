@@ -134,7 +134,7 @@ module.exports = {
 					name: '[name].[hash:4].[ext]', // 转存的图片目录
 					outputPath: 'static/img/',
 					// publicPath:env?'../static/img/':'/static/img/'
-					publicPath:'static/img/'
+					publicPath:'/static/img/'
 				  }
                 }]
             },
